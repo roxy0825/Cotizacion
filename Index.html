@@ -14,34 +14,29 @@
 <div class="card-body">
           <h5 class="card-title" style="text-align:center">COTIZACION / RESERVA</h5>
             <br>
+            <div class="row g-3 align-items-center">
+            <div class="col-auto">
+             <h4>Numero de dias</h4>
+            </div>
+            <div class="col-auto">
+              <input type="text" id="numeroDias" class="inputs">
+            </div>
+            
+
         <div class="row g-3 align-items-center">
             <div class="col-auto">
-              <label for="text-row" class="col-form-label">Numero de dias </label>
+              <h4>Numero de personas</h4>
             </div>
             <div class="col-auto">
-              <input type="text" id="inputtext" class="form-control">
-            </div>
-            <div class="col-auto">
+              <input type="text" id="numeroPersonas" class="inputs">
             </div>
 
         <div class="row g-3 align-items-center">
             <div class="col-auto">
-            <label for="text" class="col-form-label">Numero de dias </label>
+              <h4>Valor por persona</h4>
             </div>
             <div class="col-auto">
-            <input type="text" id="inputtext" class="form-control">
-            </div>
-            <div class="col-auto">
-            </div>
-
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-            <label for="text" class="col-form-label">Numero de dias </label>
-            </div>
-            <div class="col-auto">
-            <input type="text" id="inputtext" class="form-control">
-            </div>
-            <div class="col-auto">
+              <input type="text" id="valorPersonas" class="inputs">
             </div>
           </div>
         </div>
@@ -54,26 +49,26 @@
                 <thead>
                   <tr>
                     <th scope="col">Subtotal:</th>
-                    <td>Jacob</td>
+                    <td><label  id="subTotal">0</label></td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">Descuento:</th>
-                    <td>Jacob</td>
+                    <td><label id="descuento">0</label></td>
                   </tr>
                   <tr>
                     <th scope="row">Iva:</th>
-                    <td>Jacob</td>
+                    <td><label id="iva">0</label></td>
                   </tr>
                   <tr>
                     <th scope="row">Pago neto:</th>
-                    <td colspan="2">Larry the Bird</td>
+                    <td><label id="pagoNeto">0</label></td>
                   </tr>
                 </tbody>
               </table>
               <div class="d-grid gap-2 col-3 mx-auto">
-                <button class="btn btn-primary" type="button">COTIZAR</button>
+                <button class="btn btn-primary" type="button" onclick="totalResultados()" id="boton">COTIZAR</button>
             
               </div>
          
