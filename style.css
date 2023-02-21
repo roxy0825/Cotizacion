@@ -1,1 +1,30 @@
+body {
+    display: flex;
+    background-image: url(./img/ocean.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.contenido {
+    background-color: yellow;
+    width: 40%;
+    height: 100vh;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    /* mix-blend-mode: overlay; */
+}
+.personalizada{
+    display: flex;
+}
+
+h4 {
+    flex-basis: 170px;
+
+}
+input{
+    flex: 1;
+    padding: 10px;
+}
